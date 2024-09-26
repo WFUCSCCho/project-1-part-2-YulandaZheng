@@ -40,10 +40,9 @@ public class Parser {
     // Determine the incoming command and operate on the BST
     public void operate_BST(String[] command) {
 
-        //loop to create new cat object and fill parameters
-        for(int i = 0; i < command.length; i++) {
-            kitty = new Cat(command[0], Integer.parseInt(command[1]), Integer.parseInt(command[2]),command[3],command[4]);
-        }
+         //create new cat object and fill parameters
+        kitty = new Cat(command[0], Integer.parseInt(command[1]), Integer.parseInt(command[2]),command[3],command[4]);
+
         //adds to the tree
         mybst.insert(kitty);
 
